@@ -13,8 +13,29 @@
     </style>
 </head>
 <body>
-    <h1>As músicas favoritas de Ian Nakamura</h1>
-    <p>Esse site tem a intenção de mostrar as músicas favoritas de Ian Nakamura.</p>
+    <h1><script>
+        var nome = window.prompt('Qual o seu nome?')
+        window.alert('Liste o seu top 5 músicas, ' + nome)
+        var msc1 = window.prompt('Primeira música:')
+        var msc2 = window.prompt('Segunda música:') 
+        var msc3 = window.prompt('Terceira música:')
+        var msc4 = window.prompt('Quarta música:')
+        var msc5 = window.prompt('Quinta música:')
+        document.write(`Músicas favoritas de ${nome}`)
+    </script> 
+    </h1>
+    <p> <script>
+    document.write(`Esse site tem a intenção de mostrar as músicas favoritas de ${nome}<br/>` )
+    document.write('O seu top 5 músicas, ficou:<br/>')
+    document.write(`-${msc1}<br/>`)
+    document.write(`-${msc2}<br/>`)
+    document.write(`-${msc3}<br/>`)
+    document.write(`-${msc4}<br/>`)
+    document.write(`-${msc5}<br/>`)
+
+    </script>
+    </p>
+    
     
 </body>
 </html>
